@@ -16,12 +16,12 @@ for stop in stoplist:
 wordlist_after_jieba = jieba.cut(text_from_file_with_apath, cut_all=False)
 wl_space_split = " ".join(wordlist_after_jieba)
 #用jieba模块进行挖掘关键词
-coloring=np.array(Image.open("new.jpg"))
-#获取背景图片,new.jpg
+coloring=np.array(Image.open("yh-01.jpg"))
+#获取背景图片,yh-01.jpg
 my_wordcloud = WordCloud(background_color="white",
                          mask=coloring,
                          width=617, height=306,
-                         font_path="方正悠黑_511M.ttf",
+                         font_path="AdobeSongStd-Light.otf",
                          max_words=400,
                          max_font_size=100,
                          min_font_size=20,

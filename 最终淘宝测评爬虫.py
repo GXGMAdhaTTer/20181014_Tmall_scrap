@@ -43,7 +43,7 @@ def write_to_file(info):
 
 def main(start):
     info = {}
-    url = 'https://rate.tmall.com/list_detail_rate.htm?itemId=574677307362&spuId=1018721365&sellerId=4020904153&order=3&currentPage=' + \
+    url = 'https://rate.tmall.com/list_detail_rate.htm?itemId=569519492636&spuId=971368677&sellerId=1726473375&order=3&currentPage=' + \
         str(start)
     html = get_one_page(url)
     data = parse_one_page(html,info)
@@ -51,7 +51,7 @@ def main(start):
 
 
 if __name__ == '__main__':
-   for i in range(50):
+   for i in range(100):
        main(i)
        j=i+1
        print('第%s页采集完毕。'%j)

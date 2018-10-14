@@ -1,6 +1,6 @@
 from snownlp import SnowNLP
-file="comment.txt"
-file1="new.txt"
+file="comment1.txt"
+file1="new1.txt"
 x=0
 #好评计数
 k=0
